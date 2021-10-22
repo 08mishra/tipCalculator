@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/c702e6dbef.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+
+        /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+    </style> -->
+</head>
+
+<body>
+    <main>
+        <div id="header">
+            <h1>SPLI <br>TTER</h1>
+        </div>
+        <div id="container">
+            <div id="inputs">
+                <div id="bill">
+                    <label for="bill-price">Bill<br>
+                   <input type="number" id="bill-price" placeholder="0.00"><i class="fas fa-dollar-sign"></i>
+                 </label>
+                </div>
+                <div id="tip">
+                    <label>Select Tip %</label>
+                    <div id="tip-grid">
+                        <button id="btn">5%</button>
+                        <button id="btn">10%</button>
+                        <button id="btn">15%</button>
+                        <button id="btn">25%</button>
+                        <button id="btn">50%</button>
+                        <button id="custom"><input type="number" id="customno" placeholder="custom"> </button>
+
+                    </div>
+                </div>
+                <div id="people">
+                    <label>Number of People</label>
+                    <small>can't be zero</small>
+                    <input type="number" placeholder="0" id="noOfPeople"><i class="fas fa-user"></i>
+                </div>
+
+            </div>
+            <div id="pricing">
+
+                <div id="amount">
+                    <p>Tip Amount<br>/person</p>
+                    <input type="number" id="tip-amount" placeholder="0.00"><i class="fas fa-dollar-sign"></i>
+
+
+                </div>
+
+                <div id="totalamount">
+                    <p>Total<br>/person</p>
+                    <input type="number" id="total-amount" placeholder="0.00"><i class="fas fa-dollar-sign"></i>
+
+
+                </div>
+
+                <button id="reset" onclick="reset()">Reset</button>
+            </div>
+
+
+    </main>
+
+    <footer>
+        <p>challenged by frontendMentor coded by <a href="https://twitter.com/08_mishra">Prashant</a></p>
+    </footer>
+</body>
+
+</html>
