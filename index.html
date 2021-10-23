@@ -28,25 +28,28 @@
             <div id="inputs">
                 <div id="bill">
                     <label for="bill-price">Bill<br>
-                   <input type="number" id="bill-price" placeholder="0.00"><i class="fas fa-dollar-sign"></i>
+                  <button type="button" id="billPrice" onclick="billPricing()"> 
+                    <input type="number" id="bill-price" placeholder="0.00">
+                    <i class="fas fa-dollar-sign"></i>
+                    </button>
                  </label>
                 </div>
                 <div id="tip">
                     <label>Select Tip %</label>
                     <div id="tip-grid">
-                        <button id="btn">5%</button>
-                        <button id="btn">10%</button>
-                        <button id="btn">15%</button>
-                        <button id="btn">25%</button>
-                        <button id="btn">50%</button>
-                        <button id="custom"><input type="number" id="customno" placeholder="custom"> </button>
+                        <button id="btn" onclick="tipamount5()">5%</button>
+                        <button id="btn" onclick="tipamount10()">10%</button>
+                        <button id="btn" onclick="tipamount15()">15%</button>
+                        <button id="btn" onclick="tipamount25()">25%</button>
+                        <button id="btn" onclick="tipamount50()">50%</button>
+                        <button id="custom" onclick="custom()"><input type="number" id="customno" placeholder="custom"> </button>
 
                     </div>
                 </div>
                 <div id="people">
                     <label>Number of People</label>
                     <small>can't be zero</small>
-                    <input type="number" placeholder="0" id="noOfPeople"><i class="fas fa-user"></i>
+                    <input type="number" onclick="people()" placeholder="0" id="noOfPeople"><i class="fas fa-user"></i>
                 </div>
 
             </div>
@@ -75,6 +78,8 @@
     <footer>
         <p>challenged by frontendMentor coded by <a href="https://twitter.com/08_mishra">Prashant</a></p>
     </footer>
+
+    <script type="text/javascript" src="./index.js"></script>
 </body>
 
 </html>
