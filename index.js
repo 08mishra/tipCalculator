@@ -5,6 +5,7 @@ var billPrice = document.getElementById('bill-price').value = 100;
 
 
 
+
 var noPeople = document.getElementById('noOfPeople').value;
 
 var newTip = 0;
@@ -60,15 +61,15 @@ function custom() {
 }
 
 function reset() {
-    document.getElementById('bill-price').value = 0;
-    document.getElementById('total-amount').value = 0;
-    document.getElementById('tip-amount').value = 0;
+    document.getElementById('bill-price').value = "";
+    document.getElementById('total-amount').value = "";
+    document.getElementById('tip-amount').value = "";
 }
 
 
 function people() {
     var people = document.getElementById('noOfPeople').value;
     if (people == 0) {
-        alert('people can not be zero');
+
     }
 }
